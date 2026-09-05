@@ -55,10 +55,6 @@ python scan.py --min-area-ratio 0.03
 
 After each AI extraction, the terminal shows the proposed row. Press Enter to accept it, type `s` to skip it, or paste corrected JSON to write the corrected row.
 
-```json
-{"date":"2025-01-02","vendor":"Costco","amount":65.15,"cc_number":"5121","coa":"auto","location":"Fullerton"}
-```
-
 Captured receipt images are saved in `captures/`. Raw AI responses are saved in `ai_logs/`. The Excel workbook is created automatically if it does not already exist.
 
 To append without review:
