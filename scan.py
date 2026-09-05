@@ -8,13 +8,14 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
-
+from dotenv import load_dotenv
 import cv2
 import numpy as np
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
+load_dotenv()
 
 EXCEL_COLUMNS = ["Date", "Vendor", "Amount", "CC #", "COA", "Location"]
 DEFAULT_OUTPUT = Path("receipt_log.xlsx")
