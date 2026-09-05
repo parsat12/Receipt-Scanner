@@ -1,1 +1,4 @@
 .env
+captures/
+ai_logs/
+receipt_log.xlsx
